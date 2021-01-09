@@ -10,7 +10,7 @@ with some personal touches.
 ![ScreenShot of todolist page](/Screenshots/todolist.png)
 
 
-## Available Scripts
+## How to run
 
 In the project directory, you can run:
 
