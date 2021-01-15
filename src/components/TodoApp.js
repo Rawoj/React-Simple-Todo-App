@@ -31,6 +31,7 @@ export default function TodoApp(props) {
     function toggleTaskCompleted(id) {
         const updatedTasks = tasks.map(task => {
             if (id === task.id) {
+                
                 return { ...task, completed: !task.completed }
             }
             return task;

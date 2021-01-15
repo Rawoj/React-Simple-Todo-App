@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 
-
 function usePrevious(value) {
     const ref = useRef();
     useEffect(() => {
@@ -64,6 +63,16 @@ export default function TodoTask(props) {
             </div>
         </form>
     );
+    
+
+    // Set style based on completion
+    const styleWhenCompleted = {
+        textDecorationLine: "line-through"
+    };
+    const styleWhenIncomplete = {
+        textDecorationLine: "none"
+    };
+    let currentStyle = props.completed ? styleWhenCompleted : styleWhenIncomplete;
 
     const viewTemplate = (
         <div className="stack-small">
@@ -76,7 +85,10 @@ export default function TodoTask(props) {
                     onChange={() => props.toggleTaskCompleted(props.id)}
                     className="todo-checkbox"
                 />
-                <label className="todo-label" htmlFor={props.id}>
+                <label className="todo-label" 
+                    htmlFor={props.id}
+                    style={currentStyle}
+                >
                     {props.name}
                 </label>
             </div>
