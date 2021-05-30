@@ -2,7 +2,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Based on [Mozilla's Web Docs tutorial](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started)
-with some personal touches.
+
 
 
 ![ScreenShot of homepage](/Screenshots/home.png)
